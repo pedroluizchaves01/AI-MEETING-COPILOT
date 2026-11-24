@@ -1,0 +1,202 @@
+{
+  "geradoEm": "2026-11-24T21:07:49.553Z",
+  "node": "v22.23.5",
+  "pacote": {
+    "htmlKB": 483.2431640625,
+    "htmlGzipKB": 169.2509765625,
+    "partesKB": {
+      "código do app": 28.4765625,
+      "outras dependências do jsPDF": 72.1787109375,
+      "jsPDF": 329.3251953125,
+      "fontes Poppins (base64)": 41.90625
+    }
+  },
+  "sementes": [
+    11,
+    22,
+    33,
+    44,
+    55
+  ],
+  "latenciaSimuladaMs": 2000,
+  "tabela": [
+    {
+      "perfil": "conversa fluida (5% de pausas longas)",
+      "variante": "atual: pausa 3 s · ciclo 60 s · mín. 30 caracteres",
+      "chamadasPorHora": 69.6,
+      "porPausa": 19,
+      "porCiclo": 50.6,
+      "intervaloMedioS": 51.77446922174372,
+      "maiorEsperaS": 60,
+      "charsPromptMedio": 6834.158009119821,
+      "charsPromptMax": 7311.4,
+      "resumosPorHora": 10
+    },
+    {
+      "perfil": "conversa fluida (5% de pausas longas)",
+      "variante": "mín. 150 caracteres",
+      "chamadasPorHora": 66.6,
+      "porPausa": 15.6,
+      "porCiclo": 51,
+      "intervaloMedioS": 54.07862478473019,
+      "maiorEsperaS": 60,
+      "charsPromptMedio": 6853.776954614013,
+      "charsPromptMax": 7311.4,
+      "resumosPorHora": 10
+    },
+    {
+      "perfil": "conversa fluida (5% de pausas longas)",
+      "variante": "intervalo mínimo de 15 s entre chamadas",
+      "chamadasPorHora": 66.2,
+      "porPausa": 15,
+      "porCiclo": 51.2,
+      "intervaloMedioS": 54.474615447869134,
+      "maiorEsperaS": 60,
+      "charsPromptMedio": 6847.761269635215,
+      "charsPromptMax": 7310.6,
+      "resumosPorHora": 9.8
+    },
+    {
+      "perfil": "conversa fluida (5% de pausas longas)",
+      "variante": "pausa 5 s",
+      "chamadasPorHora": 65.4,
+      "porPausa": 10.4,
+      "porCiclo": 55,
+      "intervaloMedioS": 55.142458895271396,
+      "maiorEsperaS": 60,
+      "charsPromptMedio": 6847.735838508507,
+      "charsPromptMax": 7309.4,
+      "resumosPorHora": 9.6
+    },
+    {
+      "perfil": "conversa típica (15%)",
+      "variante": "atual: pausa 3 s · ciclo 60 s · mín. 30 caracteres",
+      "chamadasPorHora": 87,
+      "porPausa": 53.4,
+      "porCiclo": 33.6,
+      "intervaloMedioS": 41.62520050158132,
+      "maiorEsperaS": 60,
+      "charsPromptMedio": 6799.132134796023,
+      "charsPromptMax": 7317,
+      "resumosPorHora": 9
+    },
+    {
+      "perfil": "conversa típica (15%)",
+      "variante": "mín. 150 caracteres",
+      "chamadasPorHora": 78.2,
+      "porPausa": 43.6,
+      "porCiclo": 34.6,
+      "intervaloMedioS": 46.31336413666402,
+      "maiorEsperaS": 60,
+      "charsPromptMedio": 6800.7088661888465,
+      "charsPromptMax": 7304.2,
+      "resumosPorHora": 9
+    },
+    {
+      "perfil": "conversa típica (15%)",
+      "variante": "intervalo mínimo de 15 s entre chamadas",
+      "chamadasPorHora": 79.6,
+      "porPausa": 45.4,
+      "porCiclo": 34.2,
+      "intervaloMedioS": 45.51884907410782,
+      "maiorEsperaS": 60,
+      "charsPromptMedio": 6799.0372886607975,
+      "charsPromptMax": 7317,
+      "resumosPorHora": 9
+    },
+    {
+      "perfil": "conversa típica (15%)",
+      "variante": "pausa 5 s",
+      "chamadasPorHora": 73.2,
+      "porPausa": 28.2,
+      "porCiclo": 45,
+      "intervaloMedioS": 49.1719475951128,
+      "maiorEsperaS": 60,
+      "charsPromptMedio": 6845.451901131901,
+      "charsPromptMax": 7318.8,
+      "resumosPorHora": 9
+    },
+    {
+      "perfil": "conversa pausada (35%)",
+      "variante": "atual: pausa 3 s · ciclo 60 s · mín. 30 caracteres",
+      "chamadasPorHora": 123.4,
+      "porPausa": 110.6,
+      "porCiclo": 12.8,
+      "intervaloMedioS": 29.280661323487273,
+      "maiorEsperaS": 60,
+      "charsPromptMedio": 6701.154665405197,
+      "charsPromptMax": 7304,
+      "resumosPorHora": 8.8
+    },
+    {
+      "perfil": "conversa pausada (35%)",
+      "variante": "mín. 150 caracteres",
+      "chamadasPorHora": 96.8,
+      "porPausa": 81.4,
+      "porCiclo": 15.4,
+      "intervaloMedioS": 37.42664076451756,
+      "maiorEsperaS": 60,
+      "charsPromptMedio": 6753.023567937438,
+      "charsPromptMax": 7304,
+      "resumosPorHora": 8.8
+    },
+    {
+      "perfil": "conversa pausada (35%)",
+      "variante": "intervalo mínimo de 15 s entre chamadas",
+      "chamadasPorHora": 104.4,
+      "porPausa": 90.8,
+      "porCiclo": 13.6,
+      "intervaloMedioS": 34.52744782000203,
+      "maiorEsperaS": 60,
+      "charsPromptMedio": 6755.094886942282,
+      "charsPromptMax": 7304,
+      "resumosPorHora": 8.8
+    },
+    {
+      "perfil": "conversa pausada (35%)",
+      "variante": "pausa 5 s",
+      "chamadasPorHora": 88.8,
+      "porPausa": 56.2,
+      "porCiclo": 32.6,
+      "intervaloMedioS": 40.54315887868154,
+      "maiorEsperaS": 60,
+      "charsPromptMedio": 6750.985854415948,
+      "charsPromptMax": 7303,
+      "resumosPorHora": 8.4
+    }
+  ],
+  "crescimento": [
+    {
+      "minuto": 5,
+      "charsTranscricaoInteira": 3750
+    },
+    {
+      "minuto": 15,
+      "charsTranscricaoInteira": 11058
+    },
+    {
+      "minuto": 30,
+      "charsTranscricaoInteira": 21977
+    },
+    {
+      "minuto": 60,
+      "charsTranscricaoInteira": 44286
+    }
+  ],
+  "pdf": {
+    "curta": {
+      "ms": 9.45837899999998,
+      "kb": 34.828125,
+      "paginas": 2
+    },
+    "longa": {
+      "ms": 12.94553899999994,
+      "kb": 131.826171875,
+      "paginas": 6
+    }
+  },
+  "tickMicrossegundos": {
+    "segs100": 0.17111499999998614,
+    "segs2000": 0.16761650000000827
+  }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!-- DMC: CPR-00-00-00-400A | Título: Núcleo › Página (modelo do build) -->
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Copiloto de Reunião</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+/*__CSS__*/
+</style>
+</head>
+<body>
+<header class="band" style="padding-bottom:8px"><div class="wrap">
+  <h1>Copiloto de reunião</h1>
+  <p class="sub">Escuta a conversa presencial e sugere, em tempo real, as perguntas que ainda faltam fazer.</p>
+</div></header>
+
+<div class="bar band" style="padding-block:12px">
+  <div class="wrap">
+    <button id="mic" aria-label="Começar a ouvir" title="Começar/parar de ouvir">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg>
+    </button>
+    <div class="st"><span id="estado">Pronto para ouvir</span><span id="relogio">00:00</span></div>
+    <label class="tog"><input type="checkbox" id="auto" checked> Sugestões automáticas</label>
+    <div class="acts">
+      <button id="agora" class="pri">Sugerir agora</button>
+      <button id="gerarAta">Gerar ata</button>
+      <button id="limpar">Nova reunião</button>
+    </div>
+  </div>
+  <p id="aviso" role="status" aria-live="polite"></p>
+</div>
+
+<main class="band" style="padding-top:16px"><div class="wrap">
+  <details id="ctxBox" open>
+    <summary>Contexto da reunião (preencha antes de começar)</summary>
+    <div class="ctx">
+      <label>Empresa<input type="text" id="emp" placeholder="Nome que aparece na ata e nos arquivos" autocomplete="organization"></label>
+      <label>Autor<input type="text" id="autor" placeholder="Quem conduz a reunião" autocomplete="name"></label>
+      <label>Objetivo<input type="text" id="obj" placeholder="Ex.: reunião inicial de levantamento com o cliente"></label>
+      <label>Participantes<input type="text" id="part" placeholder="Ex.: Carlos e Ana (cliente)"></label>
+      <label class="full">Pontos que preciso esclarecer
+        <textarea id="pauta" placeholder="Ex.: orçamento disponível, prazos, quem aprova, escopo do serviço, expectativas de resultado"></textarea></label>
+    </div>
+  </details>
+
+  <div class="grid">
+    <section aria-labelledby="hs">
+      <div class="head"><h2 id="hs">Perguntas sugeridas</h2><span id="pensando" class="meta" hidden>Claude analisando…</span></div>
+      <div id="sugs"><div class="vazio">Toque no microfone e comece a reunião. As sugestões aparecem aqui assim que houver conversa suficiente, após cada pausa de 3 segundos na fala ou, no máximo, a cada 60 segundos. A mais recente fica sempre no topo.</div></div>
+      <ul id="feitas"></ul>
+    </section>
+
+    <section class="tx" aria-labelledby="ht">
+      <div class="head" style="padding:12px 18px 0;margin:0"><h2 id="ht">Transcrição</h2><div class="acts"><button id="copTx">Copiar</button><button id="txtTx">Baixar .txt</button></div></div>
+      <div id="linhas"><p id="parcial"></p></div>
+      <form id="nota"><input type="text" id="notaIn" placeholder="Anotar algo à mão…" aria-label="Anotação manual"><button>Adicionar</button></form>
+    </section>
+  </div>
+
+  <section id="ata" hidden>
+    <div class="head"><h2>Ata da reunião</h2><div class="acts"><button id="copAta">Copiar texto</button><button id="pdfAta" class="pri">Baixar PDF</button></div></div>
+    <div id="ataTxt"></div>
+  </section>
+
+  <small class="fine">A transcrição vem de um único microfone e não identifica quem fala. Avise os participantes que a conversa está sendo transcrita. Funciona no Chrome (computador ou Android) e no app Claude para desktop.</small>
+</div></main>
+<script>
+/*__JS__*/
+</script>
+</body>
+</html>
