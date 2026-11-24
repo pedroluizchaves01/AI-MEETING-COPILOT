@@ -1,0 +1,30 @@
+{
+  "name": "copiloto-reuniao",
+  "version": "1.0.0",
+  "description": "Copiloto de Reunião: ouve reuniões presenciais e sugere perguntas em tempo real, dentro do Claude.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "vitest run",
+    "lint": "eslint . --max-warnings 0",
+    "typecheck": "tsc --noEmit -p .",
+    "depcruise": "depcruise src --config brex/.dependency-cruiser.cjs",
+    "dmc": "node brex/check-dmc.mjs",
+    "brex": "npm run typecheck && npm run lint && npm run depcruise && npm run dmc",
+    "bench": "node scripts/bench.mjs",
+    "verificar": "npm run brex && npm test && npm run build"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^26.6.7",
+    "dependency-cruiser": "^18.9.0",
+    "esbuild": "^0.28.2",
+    "eslint": "^10.15.0",
+    "jspdf": "4.2.1",
+    "typescript": "5.9",
+    "typescript-eslint": "^8.74.0",
+    "vitest": "^5.1.1"
+  },
+  "type": "module",
+  "private": true
+}

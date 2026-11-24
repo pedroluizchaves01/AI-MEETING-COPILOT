@@ -1,0 +1,11 @@
+/* DMC: CPR-00-10-00-400A | Título: Núcleo › Design system › Tokens
+   VOICE: calmo e prático, ferramenta de bolso para usar com o cliente à frente.
+   IDEA: a prancheta de reunião — pauta em cima, perguntas na mão.
+   PICTURE: a própria ferramenta: microfone grande, cartões de pergunta em destaque.
+   COLOUR and TYPE: branco/grafite, cinza-concreto de apoio, laranja-sinal como acento; Poppins.
+   LAYOUT: barra de controle no topo; perguntas (largas) à esquerda, transcrição à direita; empilha no celular. */
+:root{color-scheme:light dark;
+--bg:light-dark(#ffffff,#111312);--ink:light-dark(#151716,#eef0ec);
+--mute:light-dark(#5b605c,#a5aba6);--line:light-dark(#e2e4df,#2b2f2c);
+--panel:light-dark(#f3f4f1,#1a1d1b);--acc:#ff5a1f;--acc-ink:#fff;
+--soft:light-dark(#fff1ea,#36190c)}
